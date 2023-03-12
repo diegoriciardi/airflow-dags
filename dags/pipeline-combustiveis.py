@@ -53,7 +53,7 @@ with DAG(
     # using sensor to determine the outcome of the task
     # read     from xcom tp check the status [key & value] pair
     processing_status = SparkKubernetesSensor(
-        task_id='processing',
+        task_id='processing_status',
         namespace=SPARK_NAMESPACE,
         application_name="{{ task_instance.xcom_pull(task_ids='processing')['metadata']['name']}}",
         attach_log=True
