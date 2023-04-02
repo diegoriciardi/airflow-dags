@@ -13,7 +13,7 @@ spec:
   type: Python
   pythonVersion: "3"
   mode: cluster
-  image: diegoriciardi/btc-edc-m3-spark:3.1.1
+  image: diegoriciardi/btc-edc-m3-spark:7.4.7
   imagePullPolicy: Always
   mainApplicationFile: local:///src/app/processing_job.py
   sparkVersion: "3.1.1"
